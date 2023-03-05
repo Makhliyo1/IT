@@ -1,0 +1,686 @@
+/********** Template CSS **********/
+:root {
+    --primary: #72a0c1;
+    --secondary: #F6F6F6;
+    --light: #FFFFFF;
+    --dark: #152440;
+}
+
+h1,
+h2,
+.font-weight-bold {
+    font-weight: 700 !important;
+}
+
+h3,
+h4,
+.font-weight-semi-bold {
+    font-weight: 600 !important;
+}
+
+h5,
+h6,
+.font-weight-medium {
+    font-weight: 500 !important;
+}
+
+.pt-6 {
+    padding-top: 90px;
+}
+
+.pb-6 {
+    padding-bottom: 90px;
+}
+
+.py-6 {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.btn {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+    transition: .5s;
+}
+
+.btn-primary {
+    color: #FFFFFF;
+}
+
+.btn-square {
+    width: 36px;
+    height: 36px;
+}
+
+.btn-sm-square {
+    width: 28px;
+    height: 28px;
+}
+
+.btn-lg-square {
+    width: 46px;
+    height: 46px;
+}
+
+.btn-square,
+.btn-sm-square,
+.btn-lg-square {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+}
+
+.back-to-top {
+    position: fixed;
+    display: none;
+    right: 45px;
+    bottom: 45px;
+    z-index: 99;
+}
+
+.top-shape::before {
+    position: absolute;
+    content: "";
+    width: 35px;
+    height: 100%;
+    top: 0;
+    left: -17px;
+    background: var(--primary);
+    transform: skew(40deg);
+}
+
+.navbar-light .navbar-nav .nav-link {
+    font-family: 'Barlow', sans-serif;
+    padding: 35px 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: var(--dark);
+    outline: none;
+    transition: .5s;
+}
+
+.sticky-top.navbar-light .navbar-nav .nav-link {
+    padding: 20px 15px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active {
+    color: var(--primary);
+}
+
+
+
+
+.carousel-caption {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(21, 36, 64, .7);
+    z-index: 1;
+}
+
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 10%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 3rem;
+    height: 3rem;
+}
+
+.service-item {
+    position: relative;
+    overflow: hidden;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}
+
+.service-item::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 50px;
+    bottom: -50px;
+    left: 0;
+    background: var(--light);
+    border-radius: 100% 100% 0 0;
+    box-shadow: 0px -10px 5px #EEEEEE;
+    transition: .5s;
+}
+
+.service-item:hover::after {
+    bottom: -25px;
+}
+
+.service-item p {
+    transition: .3s;
+}
+
+.service-item:hover p {
+    margin-bottom: 25px !important;
+}
+
+.team-item img {
+    transform: scale(1.15);
+    margin-left: -30px;
+    transition: .5s;
+}
+
+.team-item:hover img {
+    margin-left: 0;
+}
+
+.team-item .team-text {
+    left: -100%;
+    transition: .5s;
+}
+
+.team-item .team-text::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top: 50%;
+    right: -60px;
+    margin-top: -30px;
+    border: 30px solid;
+    border-color: transparent transparent transparent var(--primary);
+}
+
+.team-item:hover .team-text {
+    left: 0;
+}
+
+.testimonial-carousel .owl-nav {
+    margin-top: 30px;
+    display: flex;
+    justify-content: start;
+}
+
+.testimonial-carousel .owl-nav .owl-prev,
+.testimonial-carousel .owl-nav .owl-next {
+    position: relative;
+    margin: 0 5px;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    background: var(--primary);
+    font-size: 22px;
+    border-radius: 45px;
+    transition: .5s;
+}
+
+.testimonial-carousel .owl-nav .owl-prev:hover,
+.testimonial-carousel .owl-nav .owl-next:hover {
+    color: var(--dark);
+}
+
+.testimonial-carousel .owl-item img {
+    width: 90px;
+    height: 90px;
+    max-width: max-content;
+}
+
+.blog-item img {
+    transition: .5s;
+}
+
+.blog-item:hover img {
+    transform: scale(1.1);
+}
+
+
+/* changes */
+
+.fas {
+    color: white;
+}
+
+.far {
+    color: #72a0c1;
+}
+
+.ps-4 h3 {
+    color: white;
+}
+
+.mb-0 {
+    opacity: 70%;
+}
+
+.d-flex {
+    color: #010147;
+}
+
+.fa {
+    color: white;
+}
+
+.bg-white {
+    color: #010147;
+}
+
+.logo__it {
+    width: 30px;
+    height: 35px;
+    margin-right: 5px;
+    margin-bottom: 2px;
+}
+
+.fa-python:before {
+    color: white;
+}
+
+.rounded-circle {
+    background: #010147;
+}
+
+.display-5 {
+    color: #010147;
+}
+
+.container-fluid .btn-primary {
+    background-color: #010147;
+}
+
+.container-fluid .btn-primary:hover {
+    color: white;
+    outline: none;
+    background-color: #72a0c1;
+    border: none;
+}
+
+.mb-0 {
+    opacity: 1;
+}
+
+.ps-4 h3 {
+    color: #010147;
+}
+
+.d-flex img {
+    object-fit: contain;
+}
+
+.ps-4 .mb-0 {
+    opacity: 70%;
+}
+
+.col-lg-3 .btn {
+    margin-top: 20px;
+}
+
+.btn-lg {
+    background: var(--primary);
+}
+
+.btn-lg:hover {
+    background: var(--primary);
+    border: none;
+}
+
+.card {
+    max-width: 300px;
+    max-height: 550px;
+
+}
+
+.courses__card {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+
+
+
+.container__card {
+    /* max-width: 1320px; */
+    padding: 0 15px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.card {
+    max-width: 500px;
+    max-height: 550px;
+    padding: 20px;
+    border: 3px solid var(--dark);
+    overflow: hidden;
+    display: flex;
+    background-color: #fafafa;
+    align-items: center;
+    justify-content: center;
+}
+
+.courses__text {
+    text-align: center;
+    font-size: 20px;
+}
+
+
+.card__title {
+    text-align: center;
+}
+
+.card__text {
+    text-align: justify;
+    padding: 0 10px;
+}
+
+.card__btn button {
+    background: var(--primary);
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    color: white;
+    border-radius: 30px;
+    margin-bottom: 10px;
+    transition: 0.5s;
+}
+
+.card__btn button:hover {
+    background: #010147;
+    outline: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.courses__title {
+    text-align: center;
+    padding-top: 100px;
+    z-index: 1;
+}
+
+
+
+
+.card__box {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background: #010147;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 10px;
+    margin-top: 15px;
+
+}
+
+.uzbek__text {
+    font-size: 70px;
+}
+
+.card__box::before {
+    content: ' ';
+    position: absolute;
+    inset: -5px 55px;
+    background: linear-gradient(315deg, #72a0c1, #b542b5);
+    transition: 0.5s;
+    animation: animate 4s linear infinite;
+}
+
+.card__box:hover::before {
+    inset: -2px 0px;
+}
+
+@keyframes animate {
+
+
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.card__box::after {
+    content: '';
+    position: absolute;
+    inset: 3px;
+    background: #162052;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.card-box__content {
+    position: absolute;
+    inset: 10px;
+    border: 3px solid #0f1325;
+    z-index: 3;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card__text {
+    text-align: center;
+    color: white;
+    font-size: 1.3em;
+    font-weight: 600;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.card__text span {
+    font-weight: 300;
+    font-size: 0.75em;
+}
+
+.card__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+    pointer-events: none;
+    z-index: 3;
+}
+
+.card__box:hover .card__img {
+    opacity: 0;
+}
+
+.d-block .img-fluid {
+    height: 450px;
+}
+
+.level {
+    font-size: 15px;
+}
+
+
+/* media start */
+
+
+@media (max-width: 1300px) and (min-width: 870px) {
+    .uzbek__text {
+        font-size: 65px;
+        line-height: 1.1;
+    }
+}
+
+@media (max-width: 870px) and (min-width: 500px) {
+    .uzbek__text {
+        font-size: 50px;
+        line-height: 1.1;
+    }
+}
+
+@media (max-width: 1320px) and (min-width: 869.9px) {
+    .uzbek__text {
+        font-size: 60px;
+        line-height: 1.1;
+    }
+
+    .courses__card {
+        grid-template-columns: repeat(3, 1fr) !important;
+
+    }
+}
+
+@media (max-width: 1000px) and (min-width: 869.9px) {
+    .courses__card {
+        grid-template-columns: repeat(2, 1fr) !important;
+
+    }
+}
+
+@media (max-width: 870px) and (min-width: 320px) {
+    .courses__card {
+        grid-template-columns: repeat(1, 1fr) !important;
+        display: grid;
+        justify-content: center !important;
+        max-width: 500px;
+
+    }
+
+
+}
+
+@media (max-width: 576px) {
+    .carousel-caption h5 {
+        font-size: 14px;
+        font-weight: 500 !important;
+    }
+
+    .carousel-caption h1 {
+        font-size: 30px;
+        font-weight: 600 !important;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .navbar-light .navbar-nav .nav-link {
+        padding: 10px 0;
+    }
+}
+
+@media(max-width: 330px) {
+    .form-floating>.form-control {
+        height: calc(4.5rem + 2px);
+    }
+
+}
+
+
+
+
+
+
+/* media end */
+
+
+/* grad slider start */
+/* 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+HK&display=swap'); */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #fff;
+}
+
+.slider {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.slider .owl-item.active.center .slider-card {
+    transform: scale(1.15);
+    opacity: 1;
+    background: #fafafa;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #fafafa, #fafafa);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #fafafa, #fafafa);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #6B6A75;
+}
+
+.slider-card {
+    background: #fafafa;
+    padding: 0px 0px;
+    margin: 50px 15px 90px 15px;
+    border-radius: 5px;
+    box-shadow: 0 15px 45px -20px rgb(0 0 0 / 73%);
+    transform: scale(0.9);
+    opacity: 0.5;
+    transition: all 0.3s;
+}
+
+.slider-card img {
+    border-radius: 5px 5px 0px 0px;
+}
+
+.owl-dots {
+    text-align: center;
+}
+
+.owl-dots .owl-dot {
+    height: 10px;
+    width: 10px;
+    border-radius: 10px;
+    background: #ccc !important;
+    margin-left: 3px;
+    margin-right: 3px;
+    outline: none;
+}
+
+.owl-dots .owl-dot.active {
+    background: #010147 !important;
+}
+
+/* grad slider end */
+
+/* animate  */
+
+.delay-1 {
+    animation-delay: 0.5s;
+}
+
+.delay-2 {
+    animation-delay: 1s;
+}
+
+.delay-3 {
+    animation-delay: 1.5s;
+}
+
+.delay-4 {
+    animation-delay: 2s;
+}
+
+.delay-5 {
+    animation-delay: 2.5s;
+}
+
+.delay-6 {
+    animation-delay: 3s;
+}
+
+.delay-7 {
+    animation-delay: 3.5s;
+}
+
+.delay-8 {
+    animation-delay: 4s;
+}
